@@ -1,13 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card{
+  border: none !important;
+}
+
+.navbar{
+  background-color: #fff !important;
+}
+
+.navbar-brand{
+  color: #565387 !important;
+  font-size: 1.9rem !important;
+}
+
+.nav-link{
+  font-size: 1.3rem !important;
+}
+
+.menu_active{
+  font-weight: bold !important;
+  border-bottom: 1px solid #565387 !important;
+  color: #3498db !important;
+}
+
+.nav-link:hover{
+  color: #3498db !important;
+}
+
+@media(max-width: 991px){
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+  .menu_active{
+    font-weight: bold !important;
+    border-bottom: none !important;
+  }
+  #header{
+    height: 84vh;
+    margin: 15px 0;
+  }
+  #header .mx-auto div{
+    margin: 0 !important;
+  }
+  footer{
+    margin-top: 30px;
+  }
+  div.row.gy-4{
+    margin: 0 auto !important;
+  }
+  .col-md-4{
+    width: 70% !important;
+  }
+}
+
+/* CSS */
+.button-18 {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #3498db;
+  border-radius: 100px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #3498db;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #0A66C2;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.BrandName{
+  color: #3498db !important;
+}
+
+#header{
+  width: 100%;
+  height:84vh;
+}
+
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+#contact{
+  height: 76.4vh; 
+  width: 100%;
+}
+
+footer{
+  background-color: #3498db;
+  padding: 4px 0 0;
+}
+
+footer p{
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
 }
