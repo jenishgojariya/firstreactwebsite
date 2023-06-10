@@ -43,14 +43,14 @@ body {
     border-bottom: none !important;
   }
   #header{
-    height: 84vh;
+    height: 100vh;
     margin: 15px 0;
   }
   #header .mx-auto div{
     margin: 0 !important;
   }
   footer{
-    margin-top: 30px;
+    /* margin-top: 30px; */
   }
   div.row.gy-4{
     margin: 0 auto !important;
